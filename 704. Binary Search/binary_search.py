@@ -1,0 +1,23 @@
+class Solution:
+    def search(self, nums: list[int], target: int) -> int:
+        """binary search function, searches for target in a list of numbers.
+
+        Args:
+            nums (List[int]): list of sorted unique numbers to search in
+            target (int): number to search for
+
+        Returns:
+            int: index of number found, -1 if not found
+        """        
+        i: int = 0
+        j: int = len(nums) - 1
+        
+
+        first: int = nums[i]
+        last: int = nums[j]
+        return first, last
+
+
+sol: Solution = Solution()
+numbers: list[int] =  [-1,0,3,5,9,12]
+print(sol.search(numbers, 0))
