@@ -15,17 +15,16 @@ class Solution:
         first: int = nums[i]
         last: int = nums[j]
 
-        while i < j:
+        while i <= j:
             k: int = int((i+j)/2)
             if target > nums[k]:
-                i = k
+                i = k + 1
             elif target < nums[k]:
-                j = k
+                j = k - 1
             else:
                 return k
         return -1
 
-
 sol: Solution = Solution()
-numbers: list[int] =  [-1,0,3,5,9,12]
+numbers: list[int] = [3]
 print(sol.search(numbers, 3))
