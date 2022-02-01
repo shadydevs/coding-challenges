@@ -3,9 +3,6 @@ class Solution:
         
         i: int = 0
         j: int = len(nums) - 1
-        
-        first: int = nums[i]
-        last: int = nums[j]
 
         while i <= j:
             k: int = int((i+j)/2)
