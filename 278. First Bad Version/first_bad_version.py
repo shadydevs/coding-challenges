@@ -24,6 +24,6 @@ class Solution:
             k: int = int((i+j)/2)
             if not isBadVersion(k):
                 i = k + 1
-            elif isBadVersion(k):
+            else:
                 j = k - 1
         return i
