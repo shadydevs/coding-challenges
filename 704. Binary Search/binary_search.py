@@ -12,12 +12,20 @@ class Solution:
         i: int = 0
         j: int = len(nums) - 1
         
-
         first: int = nums[i]
         last: int = nums[j]
-        return first, last
+
+        while i < j:
+            k: int = int((i+j)/2)
+            if target > nums[k]:
+                i = k
+            elif target < nums[k]:
+                j = k
+            else:
+                return k
+        return -1
 
 
 sol: Solution = Solution()
 numbers: list[int] =  [-1,0,3,5,9,12]
-print(sol.search(numbers, 0))
+print(sol.search(numbers, 3))
