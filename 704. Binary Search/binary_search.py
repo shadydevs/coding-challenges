@@ -26,5 +26,5 @@ class Solution:
         return -1
 
 sol: Solution = Solution()
-numbers: list[int] = [3]
+numbers: list[int] = [-1,0,3,5,9,12]
 print(sol.search(numbers, 3))
